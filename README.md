@@ -2,13 +2,13 @@
 
 Une API REST développée avec **Spring Boot** pour gérer efficacement les produits d'une pharmacie : ajout, modification, suppression et consultation.
 
----
+
 
 ## 📌 Objectif du projet
 
 Dans le cadre de l'ouverture d'une nouvelle pharmacie, ce projet vise à automatiser la gestion des produits en stock afin d'améliorer le suivi de l'inventaire, réduire les erreurs humaines et gagner du temps dans la recherche des articles.
 
----
+
 
 ## 🔧 Technologies utilisées
 
@@ -19,7 +19,7 @@ Dans le cadre de l'ouverture d'une nouvelle pharmacie, ce projet vise à automat
 - MySQL (ou PostgreSQL)
 - Postman (tests d’API)
 
----
+
 
 ## 📦 Fonctionnalités
 
@@ -28,7 +28,7 @@ Dans le cadre de l'ouverture d'une nouvelle pharmacie, ce projet vise à automat
 - 🔹 **Supprimer** un produit
 - 🔹 **Consulter** la liste complète des produits
 
----
+
 
 ## 🗃️ Structure de l'entité `Produit`
 
@@ -40,7 +40,7 @@ Dans le cadre de l'ouverture d'une nouvelle pharmacie, ce projet vise à automat
 | prix          | Double   | Prix unitaire                        |
 | description   | String   | Brève description du produit         |
 
----
+
 
 ## 🔌 Endpoints REST
 
@@ -52,7 +52,7 @@ Dans le cadre de l'ouverture d'une nouvelle pharmacie, ce projet vise à automat
 | PUT     | `/api/produits/{id}`  | Modifier un produit existant      |
 | DELETE  | `/api/produits/{id}`  | Supprimer un produit par ID       |
 
----
+
 
 ## ⚙️ Installation
 
