@@ -61,3 +61,10 @@ Dans le cadre de l'ouverture d'une nouvelle pharmacie, ce projet vise à automat
 ```bash
 git clone https://github.com/MrRidadev/Pharmacy-Application-de-gestion-des-produits-pharmaceutique.git
 cd PharmacyAppliquation
+
+```
+## ⚙ Postman
+### Lien
+
+```bash
+https://.postman.co/workspace/My-Workspace~c5cee0b1-1804-43ac-86cd-8d4b70bf4485/collection/44160289-9bc11939-764e-4f2f-9118-55859392adbb?action=share&creator=44160289
