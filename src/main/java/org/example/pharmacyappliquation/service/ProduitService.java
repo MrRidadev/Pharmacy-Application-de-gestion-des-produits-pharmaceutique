@@ -1,5 +1,6 @@
 package org.example.pharmacyappliquation.service;
 
+import org.example.pharmacyappliquation.DTO.ProduitDto;
 import org.example.pharmacyappliquation.model.Produit;
 import org.example.pharmacyappliquation.repository.ProduitRepository;
 import org.hibernate.Internal;
@@ -7,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class ProduitService {
@@ -17,8 +19,14 @@ public class ProduitService {
         this.produitRepository = produitRepository;
     }
 
-    public Iterable<Produit> findAll() {
-        return produitRepository.findAll();
+    public Iterable<ProduitDto>findAll() {
+        return produitRepository.findAll()
+                .stream()
+                .map(product -> new ProduitDto(
+                        product.getNom(),
+                        product.getPrix()
+                ))
+                .collect(Collectors.toList());
     }
     public Produit addProduit(Produit produit) {
         return produitRepository.save(produit);

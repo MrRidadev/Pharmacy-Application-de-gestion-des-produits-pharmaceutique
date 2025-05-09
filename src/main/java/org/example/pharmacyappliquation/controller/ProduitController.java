@@ -1,12 +1,12 @@
 package org.example.pharmacyappliquation.controller;
 
 
+import org.example.pharmacyappliquation.DTO.ProduitDto;
 import org.example.pharmacyappliquation.model.Produit;
 import org.example.pharmacyappliquation.service.ProduitService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
 
 @RestController
 @RequestMapping("/produit")
@@ -19,12 +19,13 @@ public class ProduitController {
     }
 
     @GetMapping
-    public Iterable<Produit> getAllProduits() {
+    public Iterable<ProduitDto> getAllProduits() {
         return produitService.findAll();
     }
 
     @PostMapping
     public Produit createProduit(@RequestBody Produit produit) {
+
         return produitService.addProduit(produit);
     }
     @DeleteMapping("/delete/{id}")
