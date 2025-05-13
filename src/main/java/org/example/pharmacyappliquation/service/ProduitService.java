@@ -2,11 +2,11 @@ package org.example.pharmacyappliquation.service;
 
 import org.example.pharmacyappliquation.model.Produit;
 import org.example.pharmacyappliquation.repository.ProduitRepository;
-import org.hibernate.Internal;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+
 
 @Service
 public class ProduitService {
@@ -30,5 +30,10 @@ public class ProduitService {
 
     public void updateProduit(Produit produit) {
         produitRepository.save(produit);
+    }
+
+
+    public List<Produit> FindByQuantite(int quantite) {
+        return produitRepository.find
     }
 }
